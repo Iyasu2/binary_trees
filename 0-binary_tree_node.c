@@ -2,15 +2,16 @@
 #include <stdlib.h>
 
 /**
- * binary_tree_insert_left - entry point
+ * binary_tree_node - entry point
  *
  * @parent: parent node
  * @value: value of node
- * return: binary_tree_t node
+ * Return: binary_tree_t node
  */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
 	binary_tree_t *new_node = malloc(sizeof(binary_tree_t));
+
 	if (new_node == NULL)
 		return (NULL);
 
